@@ -7,7 +7,7 @@ async function expressGet() {
 
     /*In mongoDB our NFTs are sorted by chain therefore the first parameter is chain.
       The second parameter for the endpoint is ContractAddress to return all instances of that address*/
-    app.get('/contract/:chain/:address', async (req, res) => {
+    app.get('/findcontract/:chain/:address', async (req, res) => {
         //assign params to variables
         var query = req.params.address;
         var chain = req.params.chain
